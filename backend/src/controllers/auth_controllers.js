@@ -32,7 +32,7 @@ const register = async (req, res) => {
       name,
       email,
       password: hashedPassword,
-      role: role, // Prevent creating admin via registration
+      role: "user", // Prevent creating admin via registration
     });
 
     // Generate token
