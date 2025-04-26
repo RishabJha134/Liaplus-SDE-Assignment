@@ -14,9 +14,6 @@ The RBAC Blog Application is a full-stack web application demonstrating Role-Bas
 - [Security Implementation](#security-implementation)
 - [Usage Guide](#usage-guide)
 - [Admin Account Creation](#admin-account-creation)
-- [Testing](#testing)
-- [Troubleshooting](#troubleshooting)
-- [Future Enhancements](#future-enhancements)
 - [Contributors](#contributors)
 
 ## Features
