@@ -1,3 +1,16 @@
+# Liaplus SDE Assignment - RBAC Blog Platform
+
+This repository contains the completed Role-Based Access Control (RBAC) Blog Application built for the Liaplus SDE Internship Assignment.
+
+The project demonstrates:
+- Full-stack development (Node.js, Express.js, React.js, MongoDB)
+- Secure authentication using JWT
+- Role-based authorization for Admin and User
+- Clean code structure following MVC architecture
+
+Feel free to review the project and explore the Postman collection linked below for API testing!
+
+
 # RBAC Blog Application
 
 ## Project Overview
