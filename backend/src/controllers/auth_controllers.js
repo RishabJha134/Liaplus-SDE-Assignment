@@ -2,19 +2,19 @@ const User = require("../models/user_model");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 
-// Generate JWT token
+
 const generateToken = (userId) => {
   return jwt.sign({ userId }, process.env.JWT_SECRET, {
     expiresIn: process.env.JWT_LIFETIME || "1d",
   });
 };
 
-// Register user
+
 const register = async (req, res) => {
   try {
     const { name, email, password, role } = req.body;
 
-    // Check if email already exists
+    
     const existingUser = await User.findOne({ email });
     if (existingUser) {
       return res.status(400).json({
@@ -23,16 +23,16 @@ const register = async (req, res) => {
       });
     }
 
-    // Hash the password
+    
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
 
-    // Create new user with hashed password
+   
     const user = await User.create({
       name,
       email,
       password: hashedPassword,
-      role: "user", // Prevent creating admin via registration
+      role: role, 
     });
 
     // Generate token
